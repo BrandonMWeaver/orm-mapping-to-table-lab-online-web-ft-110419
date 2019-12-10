@@ -32,6 +32,6 @@ class Student
       VALUES (?, ?);
     SQL
     DB[:conn].execute(sql, self.name, self.grade)
-    @id = last_insert_rowid()
+    @id = DB[:conn].execute()
   end
 end
