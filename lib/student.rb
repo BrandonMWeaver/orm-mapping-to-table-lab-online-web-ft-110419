@@ -1,3 +1,4 @@
+require "pry"
 class Student
   attr_accessor :name, :grade
   attr_reader :id
@@ -32,5 +33,6 @@ class Student
       VALUES (?, ?);
     SQL
     DB[:conn].execute(sql, self.name, self.grade)
+    binding.pry
   end
 end
