@@ -13,5 +13,6 @@ class Student
         name TEXT,
         grade TEXT
       );
+      SQL
   end
 end
