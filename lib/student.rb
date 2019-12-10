@@ -5,4 +5,8 @@ class Student
   def initialize(id = nil)
     @id = id
   end
+  
+  def self.create(sql, name, grade, id)
+    
+  end
 end
