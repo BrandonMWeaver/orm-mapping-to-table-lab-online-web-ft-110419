@@ -6,7 +6,7 @@ class Student
     @id = id
   end
   
-  def self.create(name, grade, id)
-    
+  def self.create_table
+    sql
   end
 end
